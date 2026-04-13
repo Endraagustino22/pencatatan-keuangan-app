@@ -9,7 +9,7 @@ class SaldoSummaryWidget extends StatelessWidget {
     // container
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.only(left: 20, right: 20, top: 40, bottom: 20),
       decoration: BoxDecoration(
         color: const Color(0xFFD97757),
       ),
