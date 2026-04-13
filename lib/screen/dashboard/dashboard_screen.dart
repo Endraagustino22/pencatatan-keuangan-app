@@ -18,7 +18,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
           const SaldoSummaryWidget(),
           SizedBox(height: 10),
           Expanded(child: const InputPengeluaranWidget()),
-          SizedBox(height: 10),
         ],
       ),
     );

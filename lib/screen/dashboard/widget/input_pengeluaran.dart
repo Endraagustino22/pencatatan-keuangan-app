@@ -76,7 +76,7 @@ class _InputPengeluaranWidgetState extends State<InputPengeluaranWidget> {
           color: const Color(0xFFD97757),
           borderRadius: const BorderRadius.all(Radius.circular(20)),
         ),
-        margin: const EdgeInsets.symmetric(horizontal: 10),
+        margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 50),
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(20),
           child: Column(
