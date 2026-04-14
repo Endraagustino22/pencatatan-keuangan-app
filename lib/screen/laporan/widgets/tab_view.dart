@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pencatatan_keuangan_app/screen/laporan/widgets/chart_pengeluaran.dart';
 
 class TabBarLaporan extends StatelessWidget {
   const TabBarLaporan({super.key});
@@ -13,15 +14,21 @@ class TabBarLaporan extends StatelessWidget {
           children: [
             TabBar(
               tabs: <Widget>[
-                Tab(text: "Harian",),
-                Tab(text: "Bulanan",),
+                Tab(text: "Harian"),
+                Tab(text: "Bulanan"),
               ],
             ),
-            Expanded(
+            SizedBox(
+              height: 250,
+              width: 250,
               child: TabBarView(
                 children: <Widget>[
-                  Center(child: Text("It's cloudy here")),
-                  Center(child: Text("It's rainy here")),
+                  Center(
+                    child: ChartPengeluaran(budget: 1000000, used: 750000),
+                  ),
+                  Center(
+                    child: ChartPengeluaran(budget: 1000000, used: 500000),
+                  ),
                 ],
               ),
             ),
