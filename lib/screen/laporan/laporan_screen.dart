@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pencatatan_keuangan_app/screen/dashboard/widgets/jumlah_saldo.dart';
+import 'package:pencatatan_keuangan_app/screen/laporan/widgets/tab_view.dart';
 
 class LaporanScreenWidget extends StatefulWidget {
   const LaporanScreenWidget({super.key});
@@ -15,6 +16,7 @@ class _LaporanScreenWidgetState extends State<LaporanScreenWidget> {
       children: [
           SaldoSummaryWidget(),
           SizedBox(height: 10),
+          TabBarLaporan(),
       ],
     );
   }
