@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pencatatan_keuangan_app/screen/dashboard/widget/jumlah_saldo.dart';
+import 'package:pencatatan_keuangan_app/screen/dashboard/widgets/jumlah_saldo.dart';
 
 class LaporanScreenWidget extends StatefulWidget {
   const LaporanScreenWidget({super.key});

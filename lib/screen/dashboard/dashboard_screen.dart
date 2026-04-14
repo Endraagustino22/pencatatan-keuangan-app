@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pencatatan_keuangan_app/screen/dashboard/widget/jumlah_saldo.dart';
-import 'package:pencatatan_keuangan_app/screen/dashboard/widget/input_pengeluaran.dart';
+import 'package:pencatatan_keuangan_app/screen/dashboard/widgets/jumlah_saldo.dart';
+import 'package:pencatatan_keuangan_app/screen/dashboard/widgets/input_pengeluaran.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
