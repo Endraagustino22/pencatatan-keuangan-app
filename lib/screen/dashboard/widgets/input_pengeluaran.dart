@@ -73,7 +73,7 @@ class _InputPengeluaranWidgetState extends State<InputPengeluaranWidget> {
       child: Container(
         width: double.infinity,
         decoration: BoxDecoration(
-          color: const Color(0xFFD97757),
+          color: Color(0xFFF5F5F5),
           borderRadius: const BorderRadius.all(Radius.circular(20)),
         ),
         margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 50),
@@ -96,7 +96,7 @@ class _InputPengeluaranWidgetState extends State<InputPengeluaranWidget> {
                         'Yukk, catat pengeluaran !!',
                         style: TextStyle(
                           fontSize: 15,
-                          color: Colors.white,
+                          color: const Color(0xFF1F2937),
                           fontWeight: FontWeight.w600,
                         ),
                       ),
@@ -109,20 +109,20 @@ class _InputPengeluaranWidgetState extends State<InputPengeluaranWidget> {
                       style: const TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
-                        color: Colors.black,
+                        color: Color(0xFF4B5563),
                       ),
                       decoration: InputDecoration(
                         prefixText: 'Rp  ',
                         prefixStyle: const TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.w600,
-                          color: Colors.black,
+                          color: Color(0xFF4B5563),
                         ),
                         hintText: '0',
                         hintStyle: const TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.w600,
-                          color: Colors.black,
+                          color: Color(0xFF4B5563),
                         ),
                         filled: true,
                         fillColor: Colors.white,
@@ -159,14 +159,13 @@ class _InputPengeluaranWidgetState extends State<InputPengeluaranWidget> {
                           child: Container(
                             decoration: BoxDecoration(
                               color: isActive
-                                  ? const Color(0xFFE1F5EE)
-                                  : Theme.of(
-                                      context,
-                                    ).colorScheme.surfaceVariant,
+                                  // ignore: deprecated_member_use
+                                  ? const Color(0xFFD97757).withOpacity(0.2)
+                                  : const Color(0xFFFAFAFA),
                               borderRadius: BorderRadius.circular(8),
                               border: Border.all(
                                 color: isActive
-                                    ? const Color(0xFF1AD8A0)
+                                    ? const Color(0xFFD97757)
                                     : Colors.transparent,
                                 width: 1.5,
                               ),
@@ -177,8 +176,8 @@ class _InputPengeluaranWidgetState extends State<InputPengeluaranWidget> {
                                 Icon(
                                   _kategoriList[i]['icon'] as IconData,
                                   color: isActive
-                                      ? const Color(0xFF0F6E56)
-                                      : Colors.grey,
+                                      ? const Color(0xFFD97757)
+                                      : const Color(0xFF4B5563),
                                   size: 18,
                                 ),
                                 const SizedBox(height: 2),
@@ -187,8 +186,8 @@ class _InputPengeluaranWidgetState extends State<InputPengeluaranWidget> {
                                   style: TextStyle(
                                     fontSize: 9,
                                     color: isActive
-                                        ? const Color(0xFF0F6E56)
-                                        : Colors.grey,
+                                        ? const Color(0xFFD97757)
+                                        : const Color(0xFF4B5563),
                                   ),
                                   textAlign: TextAlign.center,
                                 ),
@@ -243,7 +242,7 @@ class _InputPengeluaranWidgetState extends State<InputPengeluaranWidget> {
                       vertical: 10,
                     ),
                     decoration: BoxDecoration(
-                      color: Theme.of(context).colorScheme.surfaceVariant,
+                      color: const Color(0xFFFAFAFA),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Row(
@@ -279,8 +278,8 @@ class _InputPengeluaranWidgetState extends State<InputPengeluaranWidget> {
                 child: ElevatedButton(
                   onPressed: _simpan,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 13, 135, 99),
-                    foregroundColor: const Color(0xFF0A3D2E),
+                    backgroundColor: const Color(0xFFD97757),
+                    foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(vertical: 10),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
