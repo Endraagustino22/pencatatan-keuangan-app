@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pencatatan_keuangan_app/screen/main_screen.dart';
 import 'screen/dashboard/dashboard_screen.dart';
-import 'package:intl/date_symbol_data_local.dart'; // 👈 tambah ini
+import 'package:intl/date_symbol_data_local.dart'; // 
 
 
 Future<void> main() async {

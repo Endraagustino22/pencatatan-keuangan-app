@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pencatatan_keuangan_app/screen/laporan/laporan_screen.dart';
 
 class MainScreen extends StatefulWidget {
   final Widget dashboardScreen;
@@ -82,7 +83,7 @@ class LaporanScreen extends StatelessWidget {
   const LaporanScreen({super.key});
   @override
   Widget build(BuildContext context) =>
-      const Center(child: Text('Laporan'));
+      const Center(child: LaporanScreenWidget());
 }
 
 class BudgetingScreen extends StatelessWidget {
