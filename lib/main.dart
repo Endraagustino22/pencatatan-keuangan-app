@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pencatatan_keuangan_app/screen/main_screen.dart';
 import 'screen/dashboard/dashboard_screen.dart';
-import 'package:intl/date_symbol_data_local.dart'; // 
-
+import 'package:intl/date_symbol_data_local.dart'; //
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFFD97757)),
         scaffoldBackgroundColor: const Color(0xFFF3F4F6),
       ),
-      home: const MainScreen( dashboardScreen: DashboardScreen()),
+      home: const MainScreen(dashboardScreen: DashboardScreen()),
     );
   }
 }

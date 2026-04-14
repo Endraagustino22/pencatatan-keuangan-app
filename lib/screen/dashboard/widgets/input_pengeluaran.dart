@@ -96,7 +96,7 @@ class _InputPengeluaranWidgetState extends State<InputPengeluaranWidget> {
                         'Yukk, catat pengeluaran !!',
                         style: TextStyle(
                           fontSize: 15,
-                          color: const Color(0xFF1F2937),
+                          color: Color(0xFF1F2937),
                           fontWeight: FontWeight.w600,
                         ),
                       ),
