@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pencatatan_keuangan_app/screen/transaksi/widgets/input_pemasukan.dart';
 import 'package:pencatatan_keuangan_app/screen/transaksi/widgets/input_pengeluaran.dart';
 
 class TabBarTransaksi extends StatelessWidget {
@@ -13,8 +14,8 @@ class TabBarTransaksi extends StatelessWidget {
           children: [
             const TabBar(
               tabs: [
-                Tab(text: "pemasukan"),
                 Tab(text: "pengeluaran"),
+                Tab(text: "pemasukan"),
               ],
             ),
 
@@ -33,6 +34,9 @@ class TabBarTransaksi extends StatelessWidget {
 
                   /* ----------------------------- tab pengeluaran ---------------------------- */
                   const Column(
+                    children: [
+                      InputPemasukanWidget()
+                    ],
                   ),
                 ],
               ),
