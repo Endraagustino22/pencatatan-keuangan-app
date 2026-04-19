@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pencatatan_keuangan_app/screen/dashboard/widgets/jumlah_saldo.dart';
+import 'package:pencatatan_keuangan_app/screen/transaksi/widgets/tab_view_transaksi.dart';
 
 class TransaksiScreenWidget extends StatefulWidget {
   const TransaksiScreenWidget({super.key});
@@ -14,7 +15,7 @@ class _TransaksiScreenWidgetState extends State<TransaksiScreenWidget> {
     return const Column(
       children: [
         SaldoSummaryWidget(),
-        
+        TabBarTransaksi(),
       ],
     );
   }
