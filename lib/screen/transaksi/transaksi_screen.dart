@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:pencatatan_keuangan_app/screen/dashboard/widgets/jumlah_saldo.dart';
 
-class LaporanScreenWidget extends StatefulWidget {
-  const LaporanScreenWidget({super.key});
+class TransaksiScreenWidget extends StatefulWidget {
+  const TransaksiScreenWidget({super.key});
 
   @override
-  State<LaporanScreenWidget> createState() => _LaporanScreenWidgetState();
+  State<TransaksiScreenWidget> createState() => _TransaksiScreenWidgetState();
 }
 
-class _LaporanScreenWidgetState extends State<LaporanScreenWidget> {
+class _TransaksiScreenWidgetState extends State<TransaksiScreenWidget> {
   @override
   Widget build(BuildContext context) {
     return const Column(
       children: [
         SaldoSummaryWidget(),
+        
       ],
     );
   }

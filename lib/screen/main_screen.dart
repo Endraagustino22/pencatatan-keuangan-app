@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pencatatan_keuangan_app/screen/laporan/laporan_screen.dart';
+import 'package:pencatatan_keuangan_app/screen/transaksi/transaksi_screen.dart';
 
 class MainScreen extends StatefulWidget {
   final Widget dashboardScreen;
@@ -71,14 +72,16 @@ class _MainScreenState extends State<MainScreen> {
   }
 }
 
+/* ---------------------------- transkasi screen ---------------------------- */
 // placeholder screens
 class TransaksiScreen extends StatelessWidget {
   const TransaksiScreen({super.key});
   @override
   Widget build(BuildContext context) =>
-      const Center(child: Text('Transaksi'));
+      const Center(child: TransaksiScreenWidget());
 }
 
+/* ---------------------------- laporan screen ---------------------------- */
 class LaporanScreen extends StatelessWidget {
   const LaporanScreen({super.key});
   @override
@@ -86,6 +89,7 @@ class LaporanScreen extends StatelessWidget {
       const Center(child: LaporanScreenWidget());
 }
 
+/* ---------------------------- budgeting screen ---------------------------- */
 class BudgetingScreen extends StatelessWidget {
   const BudgetingScreen({super.key});
   @override

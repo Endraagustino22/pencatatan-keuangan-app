@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pencatatan_keuangan_app/screen/transaksi/widgets/input_pengeluaran.dart';
 
 class TabBarLaporan extends StatelessWidget {
   const TabBarLaporan({super.key});
@@ -26,7 +27,7 @@ class TabBarLaporan extends StatelessWidget {
                   /* ----------------------------- tab Pemasukan ----------------------------- */
                   Column(
                     children: [
-                      
+                      const InputPengeluaranWidget()
                     ],
                   ),
 
